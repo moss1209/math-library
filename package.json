@@ -1,0 +1,35 @@
+{
+  "name": "math-library",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/test.cjs",
+    "test:integration": "node scripts/integration.mjs",
+    "format": "prettier --write app components lib tests scripts docs *.json *.ts *.md"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.115.0",
+    "lucide-react": "0.563.0",
+    "next": "16.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "server-only": "0.0.1",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.3",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "prettier": "3.9.6",
+    "tsx": "4.23.13",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
+
